@@ -1,47 +1,53 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-    /* Fonts */
-  --font-primary: "Pixelify Sans", sans-serif;
-  --font-secondary: 'Open Sans', sans-serif;
+	/* Fonts */
+	--font-primary: "Pixelify Sans", sans-serif;
+	--font-secondary: "Open Sans", sans-serif;
 
-    /* Colors */
-    --base-100: #dbd1fe;
-    --base-200: #b5a2fb; 
-    --base-300: #7557e8aa;
+	/* Colors */
+	--base-100: #dbd1fe;
+	--base-200: #b5a2fb;
+	--base-300: #7557e8aa;
 }
 
 html {
-    font-family: var(--font-primary);
-}
-
-textarea {
-  color: black;
+	font-family: var(--font-primary);
 }
 
 body {
-  background: linear-gradient(to bottom, var(--base-200), var(--base-100));
+	background: linear-gradient(to bottom, var(--base-200), var(--base-100));
+	color: black;
 }
 
 .bg-grid {
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 2px, transparent 2px);
+	background-size: 40px 40px;
+	background-image: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.3) 2px,
+			transparent 2px
+		),
+		linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.3) 2px,
+			transparent 2px
+		);
 }
 
 .grad-h {
-  background: linear-gradient(to left, var(--base-300), var(--base-200));
+	background: linear-gradient(to left, var(--base-300), var(--base-200));
 }
 
 .g-border {
-  border: 2px solid #6c4b7c;
+	border: 2px solid #6c4b7c;
 }
 
 .w-title {
-  line-height: 1.2;
+	line-height: 1.2;
+	color: white;
 }
 
 .w-shadow {
-  box-shadow: 5px 5px var(--base-300);
+	box-shadow: 5px 5px var(--base-300);
 }
