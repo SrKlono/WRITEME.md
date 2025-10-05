@@ -29,7 +29,7 @@ const App = () => {
 						<WindowHeader title={"previewer.exe"} />
 						<div
 							id="preview"
-							className="text-base g-border resize-none flex-1 px-1 whitespace-pre-line overflow-scroll prose-sm lg:prose"
+							className="text-base g-border resize-none flex-1 px-1 overflow-scroll prose-sm lg:prose"
 						>
 							<Markdown>{text}</Markdown>
 						</div>
