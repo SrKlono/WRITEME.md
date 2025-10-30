@@ -10,7 +10,7 @@ const App = () => {
 
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-grid">
-			<div className="grid grid-cols-2 gap-x-4 flex-1 px-[1rem]">
+			<div className="grid sm:grid-rows-2 md:grid-cols-2 md:max-h-screen gap-4 flex-1 p-[1rem]">
 				<div className="rounded-sm g-border bg-white w-shadow h-[calc(100dvh-2rem)] p-2">
 					<div className="flex flex-col gap-y-2 h-full">
 						<WindowHeader title={"editor.exe"} />
